@@ -1,6 +1,6 @@
 import '../models/restaurant.dart';
  
-/// Cart lives inside the app until checkout (no cart endpoints in the contract).
+/// Cart lives inside the app until checkout.
 class CartItem {
   const CartItem({
     required this.menuItem,

@@ -1,4 +1,3 @@
-/// A page of results, matching { page, total_pages, <list> } from the contract.
 class Paged<T> {
   const Paged({
     required this.items,

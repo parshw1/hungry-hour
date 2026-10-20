@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:hungry_hour/utils/buttons.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -24,7 +25,13 @@ class LoginPage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-            )
+            ),
+            customButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/forgot_password');
+              },
+              text: 'Forgot Password',
+            ),
           ],
         ),
       ),

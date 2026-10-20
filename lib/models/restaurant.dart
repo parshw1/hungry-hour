@@ -24,7 +24,6 @@ class Restaurant {
   final int minOrder; // smallest currency unit
   final bool isOpen;
  
-  // Only present on GET /restaurants/{id}
   final String? description;
   final String? address;
   final String? openingHours;
@@ -99,7 +98,6 @@ class MenuCategory {
       );
 }
  
-/// Response of GET /restaurants/{id}/menu
 class RestaurantMenu {
   const RestaurantMenu({required this.restaurantId, required this.categories});
  
