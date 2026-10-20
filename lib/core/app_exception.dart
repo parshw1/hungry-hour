@@ -1,6 +1,3 @@
-/// One error type for the whole app. Repositories throw this, screens catch it.
-/// Matches the error shape in the API contract:
-/// { "error": { "code": "...", "message": "...", "fields": { ... } } }
 class AppException implements Exception {
   const AppException(
     this.code,
